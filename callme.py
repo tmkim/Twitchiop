@@ -5,8 +5,8 @@ def call():
 	rec = raw_input("Your number: ")
 
 	# Your Account Sid and Auth Token from twilio.com/user/account
-	account_sid = "ACd04a3d6d646809d8e2aafa609e03d38d"
-	auth_token = "dae02b5d7c0b54b3fae7aa05560c1d81"
+	account_sid = "<sid>"
+	auth_token = "<token>"
 	client = TwilioRestClient(account_sid, auth_token)
 
 	call = client.calls.create(url="http://tmkim.github.io/workplz",
